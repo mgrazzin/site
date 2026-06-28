@@ -1,0 +1,211 @@
+---
+import Layout from "./Layout.astro";
+
+interface Frontmatter {
+	title?: string;
+	description?: string;
+	date?: Date | string;
+}
+
+interface Props extends Frontmatter {
+	frontmatter?: Frontmatter;
+}
+
+const {
+	title = "Untitled",
+	description,
+	date,
+} = Astro.props.frontmatter ?? Astro.props;
+
+const parsedDate = date ? new Date(date) : undefined;
+const hasValidDate = parsedDate && !Number.isNaN(parsedDate.valueOf());
+---
+
+<Layout title={title} description={description}>
+	<article class="markdown-content">
+		<header class="article-header">
+			<h1>{title}</h1>
+
+			{description && <p class="description">{description}</p>}
+
+			{
+				hasValidDate && (
+					<time datetime={parsedDate.toISOString()}>
+						{parsedDate.toLocaleDateString("fr", {
+							year: "numeric",
+							month: "long",
+							day: "numeric",
+						})}
+					</time>
+				)
+			}
+		</header>
+
+		<slot />
+	</article>
+</Layout>
+
+<style>
+	.markdown-content {
+		max-width: 760px;
+		margin: 0 auto;
+	}
+
+	.article-header {
+		margin-bottom: 3rem;
+		padding-bottom: 2rem;
+		border-bottom: 1px solid #dfe5ec;
+	}
+
+	.article-header h1 {
+		margin: 0;
+		color: #111827;
+		font-size: clamp(2.25rem, 6vw, 4rem);
+		line-height: 1.08;
+		letter-spacing: -0.045em;
+	}
+
+	.description {
+		max-width: 650px;
+		margin: 1rem 0;
+		color: #526070;
+		font-size: 1.2rem;
+		line-height: 1.6;
+	}
+
+	time {
+		color: #738093;
+		font-size: 0.9rem;
+	}
+
+	/*
+	 * Markdown is rendered through <slot />, so use :global()
+	 * to target the generated heading, paragraph, list and code elements.
+	 */
+
+	.markdown-content :global(h2),
+	.markdown-content :global(h3),
+	.markdown-content :global(h4) {
+		color: #111827;
+		line-height: 1.25;
+		letter-spacing: -0.025em;
+		scroll-margin-top: 2rem;
+	}
+
+	.markdown-content :global(h2) {
+		margin: 3rem 0 1rem;
+		font-size: 1.8rem;
+	}
+
+	.markdown-content :global(h3) {
+		margin: 2.25rem 0 0.75rem;
+		font-size: 1.35rem;
+	}
+
+	.markdown-content :global(p) {
+		margin: 1.25rem 0;
+	}
+
+	.markdown-content :global(a) {
+		color: #2563eb;
+		text-decoration-thickness: 0.08em;
+		text-underline-offset: 0.18em;
+	}
+
+	.markdown-content :global(a:hover) {
+		color: #1d4ed8;
+	}
+
+	.markdown-content :global(strong) {
+		color: #111827;
+	}
+
+	.markdown-content :global(ul),
+	.markdown-content :global(ol) {
+		padding-left: 1.5rem;
+	}
+
+	.markdown-content :global(li) {
+		margin: 0.4rem 0;
+		padding-left: 0.25rem;
+	}
+
+	.markdown-content :global(blockquote) {
+		margin: 2rem 0;
+		padding: 0.25rem 0 0.25rem 1.25rem;
+		color: #526070;
+		border-left: 4px solid #3b82f6;
+	}
+
+	.markdown-content :global(blockquote p) {
+		margin: 0.5rem 0;
+	}
+
+	.markdown-content :global(hr) {
+		margin: 3rem 0;
+		border: 0;
+		border-top: 1px solid #dfe5ec;
+	}
+
+	.markdown-content :global(img) {
+		display: block;
+		max-width: 100%;
+		height: auto;
+		margin: 2rem auto;
+		border-radius: 0.75rem;
+		box-shadow: 0 10px 30px rgb(15 23 42 / 10%);
+	}
+
+	.markdown-content :global(code) {
+		padding: 0.15rem 0.4rem;
+		color: #be123c;
+		background: #eef2f7;
+		border-radius: 0.3rem;
+		font-family: "Cascadia Code", "SFMono-Regular", Consolas, monospace;
+		font-size: 0.9em;
+	}
+
+	.markdown-content :global(pre) {
+		max-width: 100%;
+		margin: 1.75rem 0;
+		padding: 1.25rem;
+		overflow-x: auto;
+		background: #111827;
+		border: 1px solid #263244;
+		border-radius: 0.75rem;
+	}
+
+	.markdown-content :global(pre code) {
+		padding: 0;
+		color: inherit;
+		background: transparent;
+	}
+
+	.markdown-content :global(table) {
+		display: block;
+		width: 100%;
+		margin: 2rem 0;
+		overflow-x: auto;
+		border-collapse: collapse;
+	}
+
+	.markdown-content :global(th),
+	.markdown-content :global(td) {
+		padding: 0.75rem 1rem;
+		text-align: left;
+		border: 1px solid #dfe5ec;
+	}
+
+	.markdown-content :global(th) {
+		color: #111827;
+		background: #eef2f7;
+	}
+
+	@media (max-width: 600px) {
+		.article-header {
+			margin-bottom: 2rem;
+		}
+	}
+</style>
+
+

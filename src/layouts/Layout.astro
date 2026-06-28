@@ -1,0 +1,213 @@
+---
+interface Props {
+	title?: string;
+	description?: string;
+}
+
+const {
+	title = 'Astro Basics',
+	description = 'A simple website built with Astro.',
+} = Astro.props;
+
+const currentYear = new Date().getFullYear();
+---
+
+<!doctype html>
+<html lang="fr-fr">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<link rel="icon" href="/favicon.ico" />
+
+		<meta name="generator" content={Astro.generator} />
+		<meta name="description" content={description} />
+
+		<title>{title}</title>
+	</head>
+
+	<body>
+		<header class="site-header">
+			<div class="container header-content">
+				<a class="brand" href="/" aria-label="Home">
+					<span >
+						<img src="/mari.png" class="ui-icon">
+					</span>
+					<span>Mariana Site</span>
+				</a>
+
+				<nav aria-label="Main navigation">
+					<a href="/">Página Inicial</a>
+					<a href="https://celin.ufpr.br">Celin</a>
+				</nav>
+			</div>
+		</header>
+
+		<main class="container">
+			<slot />
+		</main>
+
+		<footer class="site-footer">
+			<div class="container footer-content">
+				<p>&copy; {currentYear} Mariana Grazziotim</p>
+				<p>Built with Astro</p>
+			</div>
+		</footer>
+	</body>
+</html>
+
+<style is:global>
+	:root {
+		font-family:
+			Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
+			"Segoe UI", sans-serif;
+		color: #1f2937;
+		background: #f8fafc;
+		font-synthesis: none;
+		text-rendering: optimizeLegibility;
+	}
+
+	* {
+		box-sizing: border-box;
+	}
+
+	html {
+		min-width: 320px;
+		scroll-behavior: smooth;
+	}
+
+	body {
+		display: flex;
+		min-height: 100vh;
+		margin: 0;
+		flex-direction: column;
+		background:
+			radial-gradient(circle at top left, rgba(124, 58, 237, 0.08), transparent 30rem),
+			#f8fafc;
+	}
+
+	a {
+		color: inherit;
+		text-decoration: none;
+	}
+
+	img {
+		display: block;
+		max-width: 100%;
+	}
+
+	.container {
+		width: min(100% - 2rem, 72rem);
+		margin-inline: auto;
+	}
+
+	.site-header {
+		position: sticky;
+		top: 0;
+		z-index: 10;
+		border-bottom: 1px solid rgba(148, 163, 184, 0.25);
+		background: rgba(248, 250, 252, 0.85);
+		backdrop-filter: blur(12px);
+	}
+
+	.header-content {
+		display: flex;
+		min-height: 4.5rem;
+		align-items: center;
+		justify-content: space-between;
+		gap: 2rem;
+	}
+
+	.brand {
+		display: inline-flex;
+		align-items: center;
+		gap: 0.75rem;
+		font-weight: 700;
+		letter-spacing: -0.02em;
+	}
+
+	.brand-mark {
+		display: grid;
+		width: 2rem;
+		height: 2rem;
+		place-items: center;
+		border-radius: 0.65rem;
+		color: white;
+		background: linear-gradient(135deg, #7c3aed, #2563eb);
+		box-shadow: 0 8px 20px rgba(79, 70, 229, 0.25);
+	}
+
+	nav {
+		display: flex;
+		align-items: center;
+		gap: 0.25rem;
+	}
+
+	nav a {
+		padding: 0.6rem 0.85rem;
+		border-radius: 0.65rem;
+		color: #475569;
+		font-size: 0.95rem;
+		font-weight: 500;
+		transition:
+			color 150ms ease,
+			background-color 150ms ease;
+	}
+
+	nav a:hover,
+	nav a:focus-visible {
+		color: #111827;
+		background: rgba(148, 163, 184, 0.14);
+	}
+
+	main {
+		flex: 1;
+		padding-block: clamp(3rem, 8vw, 6rem);
+	}
+
+	.site-footer {
+		border-top: 1px solid rgba(148, 163, 184, 0.25);
+		color: #64748b;
+	}
+
+	.footer-content {
+		display: flex;
+		min-height: 5rem;
+		align-items: center;
+		justify-content: space-between;
+		gap: 1rem;
+		font-size: 0.9rem;
+	}
+
+	.footer-content p {
+		margin: 0;
+	}
+
+	@media (max-width: 40rem) {
+		.header-content {
+			align-items: flex-start;
+			flex-direction: column;
+			gap: 0.75rem;
+			padding-block: 1rem;
+		}
+
+		nav {
+			width: 100%;
+			overflow-x: auto;
+		}
+
+		.footer-content {
+			align-items: flex-start;
+			flex-direction: column;
+			justify-content: center;
+			padding-block: 1.25rem;
+		}
+	}
+
+	.ui-icon {
+		width: 50px;
+		height: 50px;
+	}
+</style>
+
