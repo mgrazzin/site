@@ -9,7 +9,7 @@ date: 2026-07
 
 ## Conteúdo
 
- | Chronograme |
+ | Chronograme | Contenu |
 | ----------- | ----------- |
 | 03/07 | brise glace |
 | 10/07 | examen écrit | 
