@@ -1,5 +1,5 @@
 ---
-layout: ../../layouts/MarkdownLayout.astro
+layout: ../layouts/MarkdownLayout.astro
 title: Francês 1 - Terça e quinta
 description: "Édito A1 : unidades 0, 1, 2, 3"
 date: 2026-06-27
