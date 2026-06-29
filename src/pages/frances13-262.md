@@ -1,13 +1,12 @@
 ---
 layout: ../layouts/MarkdownLayout.astro
-title: Francês 1 - Terça
+title: Francês 1
 description: "Édito A1 : unidades 0, 1, 2, 3"
 date: 2026-06-27
 ---
+# Terça, 18h30-22h10
 
-## Unidade 0
-
-### Conteúdooo
+## Conteúdo
 
  | Linguistiques | Description |
 | ----------- | ----------- |
