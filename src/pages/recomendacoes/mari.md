@@ -7,7 +7,8 @@ date: 2026-07
 
 ### Films et Séries
 
-<p style="text-align: center;">Les Demoiselles de Rochefort</p><br>
+<p style="text-align: center;">Les Demoiselles de Rochefort</p>
+
 ![Les Demoiselles de Rochefort](https://i.imgur.com/BHkLjoa.png)
 
 | Où regarder : | N/A |
