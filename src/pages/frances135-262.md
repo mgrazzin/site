@@ -7,6 +7,41 @@ date: 2026-07
 
 # Terça e quinta, 16h10-18h10
 
+## Chronogramme
+
+ | Jour | Contenu |
+| ----------- | ----------- |
+| 11/08 | Brise glace |
+| | |
+| | |
+| | |
+| | |
+| | |
+| | |
+| | |
+| | |
+| | |
+| | |
+| | |
+| | |
+| | |
+| | |
+| | |
+| | |
+| | |
+| | |
+| | |
+| | |
+| | |
+| | |
+| | |
+| | |
+| | |
+| | |
+| | |
+| | |
+| 01/12 | Final das aulas, confraternização | 
+
 ## Conteúdo
 
  | Linguistiques | Description |
