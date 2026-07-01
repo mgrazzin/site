@@ -5,12 +5,16 @@ description: Sont-elles bonnes ? Je pense que oui !
 date: 2026-07
 ---
 
+## Sommaire
+
+Les Demoiselles de Rochefort[^1]
+
 ### Films et Séries
 
-<p style="text-align: center;">Les Demoiselles de Rochefort</p>
+<p style="text-align: center;">[^1]Les Demoiselles de Rochefort</p>
 
-![Les Demoiselles de Rochefort](https://i.imgur.com/BHkLjoa.png)
-
+![[^1]Les Demoiselles de Rochefort](https://i.imgur.com/BHkLjoa.png)
+[^1]
 | Où regarder : | N/A |
 | ----------- | ----------- |
 | Scénario | Jacques Demy |
@@ -27,3 +31,8 @@ date: 2026-07
 
 > Écrit par comtesse de Ségur ; littérature pour enfants <br>
 > Disponible gratuitement à : [Project Gutenberg](https://www.gutenberg.org/ebooks/15058)
+
+
+
+
+[^1] testestesteste
