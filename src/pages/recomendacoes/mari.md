@@ -7,7 +7,7 @@ date: 2026-07
 
 ## Sommaire
 
-Les Demoiselles de Rochefort [^1]
+Les Demoiselles de Rochefort
 
 ### Films et Séries
 
@@ -31,8 +31,3 @@ Les Demoiselles de Rochefort [^1]
 
 > Écrit par comtesse de Ségur ; littérature pour enfants <br>
 > Disponible gratuitement à : [Project Gutenberg](https://www.gutenberg.org/ebooks/15058)
-
-
-
-
-[^1] testestesteste
