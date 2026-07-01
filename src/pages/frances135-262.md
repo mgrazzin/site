@@ -36,10 +36,10 @@ date: 2026-07
 | | |
 | | |
 | | |
+|  |  |
 | | |
 | | |
-| | |
-| 24/11 | Compréhension Oral |
+| 24/11 | == Compréhension Oral == |
 | 01/12 | Final das aulas, confraternização | 
 
 ## Conteúdo

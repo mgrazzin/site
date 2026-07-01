@@ -1,15 +1,12 @@
 ---
 layout: ../../layouts/MarkdownLayout.astro
-title: Francês 1
-description: "Édito A1 : unidades 0, 1, 2, 3"
+title: Films et séries
+description: Disponibles gratuitement (ou non)
 date: 2026-07
 ---
 
-# Terça, 18h30-22h10
+### TV5Monde+
 
-## Conteúdo
-
- | Chronograme | Contenu |
-| ----------- | ----------- |
-| 03/07 | brise glace |
-| 10/07 | examen écrit | 
+<p style="text-align: center;">Totally Spies! en français, sans sous-titres (Niveau : Francês 3/4+)</p>
+![Totally spies!](https://i.imgur.com/qp6rRsh.png)
+Disponible gratuitement à : [TV5 Monde](https://www.tv5mondeplus.com/fr/jeunesse/a-partir-de-6-ans/totally-spies)
