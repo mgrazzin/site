@@ -19,7 +19,7 @@ Les Demoiselles de Rochefort
 | ----------- | ----------- |
 | Scénario | Jacques Demy |
 | Genre |  Comédie dramatique, romance, film musical |
-| Acteurs principaux | Catherine Deneuve ; Françoise Doléac |
+| Acteurs principaux | Catherine Deneuve ; Françoise Dorléac |
 
 ---
 
