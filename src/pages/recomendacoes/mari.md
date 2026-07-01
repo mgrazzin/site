@@ -21,9 +21,9 @@ date: 2026-07
 
 ### Livres et BDs
 
-<p style="text-align: center;">Les malheurs de Sophie</p>
+<p style="text-align: center;"><b>Les malheurs de Sophie</b></p>
 
 ![Les malheurs de Sophie](https://i.imgur.com/77uZBjJ.png)
 
-> Écrit par comtesse de Ségur ; littérature pour enfants
+> Écrit par comtesse de Ségur ; littérature pour enfants <br>
 > Disponible gratuitement à : [Project Gutenberg](https://www.gutenberg.org/ebooks/15058)
