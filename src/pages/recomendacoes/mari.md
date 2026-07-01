@@ -7,8 +7,8 @@ date: 2026-07
 
 ### Films et Séries
 
-<p style="text-align: center;">Les Demoiselles de Rochefort</p>
+<p style="text-align: center;">Les Demoiselles de Rochefort</p><br>
 ![Les Demoiselles de Rochefort](https://i.imgur.com/BHkLjoa.png)
-<p style="text-align: center;">| Scénario | Jacques Demy |</p>
-<p style="text-align: center;">| Genre |  Comédie dramatique, romance, film musical |</p>
-<p style="text-align: center;">| Acteurs principaux | Catherine Deneuve ; Françoise Doléac |</p>
+| Scénario | Jacques Demy |
+| Genre |  Comédie dramatique, romance, film musical |
+| Acteurs principaux | Catherine Deneuve ; Françoise Doléac |
