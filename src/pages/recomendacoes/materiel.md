@@ -1,5 +1,5 @@
 ---
-layout: ../layouts/MarkdownLayout.astro
+layout: ../../layouts/MarkdownLayout.astro
 title: Materiel
 description: disponible gratuitement
 date: 2026-07
