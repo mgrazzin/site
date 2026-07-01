@@ -9,7 +9,7 @@ date: 2026-07
 
 ## Chronogramme
 
- | Jour | Prémière Partie | Secondième Partie
+ | Jour | Prémière Partie | Secondième Partie |
 | ----------- | ----------- |
 | 11/08 | Brise glace | Unité 0 pages 12 et 13 |
 | 18/08 | Unité 0 page 14 et 15 | Unité 1 pages 17, 18 et 19 |
