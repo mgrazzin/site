@@ -11,10 +11,10 @@ Les Demoiselles de Rochefort[^1]
 
 ### Films et Séries
 
-<p style="text-align: center;">[^1]Les Demoiselles de Rochefort</p>
+<p style="text-align: center;">Les Demoiselles de Rochefort</p>
 
 ![[^1]Les Demoiselles de Rochefort](https://i.imgur.com/BHkLjoa.png)
-[^1]
+
 | Où regarder : | N/A |
 | ----------- | ----------- |
 | Scénario | Jacques Demy |
