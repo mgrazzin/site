@@ -7,7 +7,7 @@ date: 2026-07
 
 ## Sommaire
 
-Les Demoiselles de Rochefort[^1]
+Les Demoiselles de Rochefort [^1]
 
 ### Films et Séries
 
