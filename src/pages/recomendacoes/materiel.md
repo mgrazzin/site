@@ -11,7 +11,7 @@ date: 2026-07
 
 ![ARTE Magazine](https://i.imgur.com/WXTfxc1.png)
 
-Disponible gratuitement à : [ARTE.tv](https://arte-magazine.arte.tv/archive)
+> Disponible gratuitement à : [ARTE.tv](https://arte-magazine.arte.tv/archive)
 
 
 
